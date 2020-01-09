@@ -1,5 +1,5 @@
 # action.yml
-name: 'Emojify'
+name: 'Run Emojify'
 description: 'run emojify on all .md files of a directory'
 inputs:
   directory:
