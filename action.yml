@@ -1,0 +1,13 @@
+# action.yml
+name: 'Emojify'
+description: 'run emojify on all .md files of a directory'
+inputs:
+  directory:
+    description: 'directory to run the action on'
+    required: true
+    default: 'tmp'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.directory }}
